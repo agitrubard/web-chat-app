@@ -1,4 +1,4 @@
-package com.agitrubard.webchatapp.config;
+package com.agitrubard.webchatapp.websocket.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.messaging.simp.config.MessageBrokerRegistry;
@@ -6,7 +6,7 @@ import org.springframework.web.socket.config.annotation.EnableWebSocketMessageBr
 import org.springframework.web.socket.config.annotation.StompEndpointRegistry;
 import org.springframework.web.socket.config.annotation.WebSocketMessageBrokerConfigurer;
 
-import static com.agitrubard.webchatapp.config.endpoint.WebSocketConfigEndpoint.*;
+import static com.agitrubard.webchatapp.websocket.config.endpoint.WebSocketConfigEndpoint.*;
 
 @Configuration
 @EnableWebSocketMessageBroker
@@ -19,7 +19,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
-        registry.setApplicationDestinationPrefixes(APP);
-        registry.enableSimpleBroker(TOPIC);
+        registry.setApplicationDestinationPrefixes(CHAT);
+        registry.enableSimpleBroker(WEB_APP);
     }
 }
