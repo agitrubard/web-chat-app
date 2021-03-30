@@ -1,5 +1,5 @@
 # Web Mesajlaşma Uygulaması :speech_balloon:
-### Birebir olarak haberleşmeyi sağlayan bir web uygulamasıdır.
+### Sisteme giriş yapan kişilerle iletişim kurabileceğiniz web mesajlaşma uygulamasıdır.
 
     - Spring Boot ile birlikte WebSocket API kullanılarak oluşturulan bir mesajlaşma uygulamasıdır.
     - Kullanıcılar sisteme giriş yaptıktan sonra isimleri ile giriş yaparak sohbet başlatabilirler.
