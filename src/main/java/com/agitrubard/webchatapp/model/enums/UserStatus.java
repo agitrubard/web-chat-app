@@ -1,8 +1,8 @@
 package com.agitrubard.webchatapp.model.enums;
 
-public enum MessageType {
+public enum UserStatus {
 
-    CHAT,
     JOIN,
+    CHAT,
     LEAVE
 }
