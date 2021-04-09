@@ -1,7 +1,7 @@
 package com.agitrubard.webchatapp.websocket;
 
-import com.agitrubard.webchatapp.model.dto.MessageDto;
-import com.agitrubard.webchatapp.model.enums.MessageType;
+import com.agitrubard.webchatapp.model.enums.UserStatus;
+import com.agitrubard.webchatapp.model.response.DisconnectedUserResponse;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
@@ -31,14 +31,14 @@ public class WebSocketEventListener {
 
         String username = headerAccessor.getSessionAttributes().get("username").toString();
         if (username != null) {
-            log.info("User Disconnected : " + username);
+            log.info(username + " Disconnected to Chat App");
 
-            MessageDto message = MessageDto.builder()
-                    .type(MessageType.LEAVE)
-                    .sender(username)
+            DisconnectedUserResponse disconnectedUserResponse = DisconnectedUserResponse.builder()
+                    .username(username)
+                    .userStatus(UserStatus.LEAVE)
                     .build();
 
-            messagingTemplate.convertAndSend(WEB_APP + "/chat", message);
+            messagingTemplate.convertAndSend(WEB_APP + "/chat", disconnectedUserResponse);
         }
     }
 }
