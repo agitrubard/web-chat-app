@@ -10,6 +10,6 @@ import org.springframework.stereotype.Component;
 public class ApplicationStartupService implements ApplicationListener<ApplicationReadyEvent> {
     @Override
     public void onApplicationEvent(ApplicationReadyEvent applicationReadyEvent) {
-        log.info("WEB CHAT APP STARTED!");
+        log.info("WEB CHAT APP STARTED ✔");
     }
 }
