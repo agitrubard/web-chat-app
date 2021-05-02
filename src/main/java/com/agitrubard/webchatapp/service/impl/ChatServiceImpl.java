@@ -28,6 +28,8 @@ public class ChatServiceImpl implements ChatService {
 
     @Override
     public MessageResponse sendMessage(MessageRequest messageRequest) {
+        log.info(messageRequest.getSender() + " Sent Message");
+
         return getMessageResponse(messageRequest);
     }
 
