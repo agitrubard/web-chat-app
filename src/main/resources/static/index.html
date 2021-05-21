@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Web Chat App</title>
+    <link rel="stylesheet" href="/css/main.css"/>
+    <link rel="icon" href="/images/logo.png">
+</head>
+<body>
+
+<div id="login-page">
+    <div class="login-container">
+        <h1 class="login-header" id="login-header-text">Hi, Welcome!</h1>
+        <form id="login-form" name="login-form">
+            <div class="input-group">
+                <input type="text" id="name" placeholder="Username" autocomplete="off" class="input-form"
+                       required maxlength="20"
+                       onkeypress='validate(event)'/>
+
+                <button type="submit" class="accent username-submit" id="login-button">Login</button>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
