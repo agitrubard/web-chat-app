@@ -1,18 +1,22 @@
-# Web Mesajlaşma Uygulaması :speech_balloon:
-### Sisteme giriş yapan kişilerle iletişim kurabileceğiniz web mesajlaşma uygulamasıdır.
+# Web Chat App :speech_balloon:
+### It's a web application where you can communicate with contacts in the application.
 
-    - Spring Boot ile birlikte WebSocket API kullanılarak oluşturulan bir mesajlaşma uygulamasıdır.
-    - Kullanıcılar sisteme giriş yaptıktan sonra isimleri ile giriş yaparak sohbet başlatabilirler.
+    - It's a chat application created using WebSocket API with Spring Boot.
+    - Users can join the chat by logging in with their username after logging into the application.
 
-Kullanılan Teknolojiler;
+Used Technologies;
 - Java
 - Spring Boot
 - Maven
 - Hibernate
 - WebSocket
-  * Bir sunucu ile bir istemci arasında iki yönlü bir iletişim kanalı kurmayı mümkün kılan bir iletişim protokolüdür.
+  * It's a computer communications protocol, providing full-duplex communication channels over a single TCP connection.
 - STOMP
-  * Veri alışverişi formatını ve kurallarını tanımlayan bir Basit Metin Odaklı Mesajlaşma protokolüdür. WebSocket sadece bir iletişim protokolüdür. Yalnızca belirli bir kullanıcıya mesaj gönderebilmek için STOMP’a ihtiyaç duyarız.
+  * It's the Simple (or Streaming) Text Orientated Messaging Protocol.
 - SockJS
-
-Uygulama : [`Web Chat App`](https://agitrubard-chat-app.herokuapp.com/)
+#
+    - Click Icon for Using Application in Computer.
+    - Scan QR Code for Using Application in Mobile Devices.
+<p align="center">
+<a href="https://agitrubard-chat-app.herokuapp.com/"> <img align="center" src="https://github.com/agitrubard/web-chat-app/blob/master/src/main/resources/static/images/qr_code.png?raw=true" width="250"> </a>
+</p>
