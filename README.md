@@ -14,3 +14,5 @@ Kullanılan Teknolojiler;
 - STOMP
   * Veri alışverişi formatını ve kurallarını tanımlayan bir Basit Metin Odaklı Mesajlaşma protokolüdür. WebSocket sadece bir iletişim protokolüdür. Yalnızca belirli bir kullanıcıya mesaj gönderebilmek için STOMP’a ihtiyaç duyarız.
 - SockJS
+
+Uygulama : [`Web Chat App`](https://agitrubard-chat-app.herokuapp.com/)
